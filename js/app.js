@@ -29,3 +29,8 @@ document.querySelectorAll('.slider__item').forEach(item => {
 		new GraphModal().open('first');
 	})
 });
+
+let descr = document.querySelector('.descr');
+sliderMain.on('slideChange', e => {
+	sliderMain.activeIndex > 0 ? descr.classList.add('hidden') : descr.classList.remove('hidden')
+});

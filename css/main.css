@@ -52,6 +52,11 @@ html {
 	transition: transform var(--transition);
 }
 
+.slider__item--last {
+	cursor: unset;
+	pointer-events: none;
+}
+
 .slider__img {
 	display: block;
 	width: 300%;

@@ -6,12 +6,12 @@ const sliderMain = new Swiper('.slider-main', {
 	sensitivity: 10,
 	breakpoints: {
 		0: {
-			slidesPerView: 2.5,
+			slidesPerView: 1.2,
 			spaceBetween: 20
 		},
 		680: {
 			slidesPerView: 3.5,
-			spaceBetween: 60
+			spaceBetween: 30
 		}
 	}
 });
@@ -34,3 +34,5 @@ let descr = document.querySelector('.descr');
 sliderMain.on('slideChange', e => {
 	sliderMain.activeIndex > 0 ? descr.classList.add('hidden') : descr.classList.remove('hidden')
 });
+
+new SimpleBar(document.getElementById('simplebar'));

@@ -1,4 +1,6 @@
 const sliderMain = new Swiper('.slider-main', {
+	observer: true,
+	observeParents: true,
 	freeMode: true,
 	centeredSlides: true,
 	mousewheel: true,
@@ -17,6 +19,8 @@ const sliderMain = new Swiper('.slider-main', {
 });
 
 const sliderBg = new Swiper('.slider-bg', {
+	observer: true,
+	observeParents: true,
 	centeredSlides: true,
 	parallax: true,
 	sensitivity: 10,
@@ -34,5 +38,7 @@ let descr = document.querySelector('.descr');
 sliderMain.on('slideChange', e => {
 	sliderMain.activeIndex > 0 ? descr.classList.add('hidden') : descr.classList.remove('hidden')
 });
+
+swiper.update();
 
 new SimpleBar(document.getElementById('simplebar'));

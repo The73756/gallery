@@ -34,10 +34,11 @@ html {
 }
 
 
+
 .slider {
 	height: 100%;
 	overflow: visible;
-	top: 5vh;
+	top: 2vh;
 }
 
 .slier__wrapper {
@@ -47,7 +48,7 @@ html {
 }
 
 .slider__item {
-	max-height: 90vh;
+	max-height: 96vh;
 	overflow: hidden;
 	cursor: pointer;
 	transition: transform var(--transition);
@@ -55,13 +56,13 @@ html {
 
 .slider__img {
 	display: block;
-	width: 200%;
+	width: 300%;
 	height: 85%;
 	background-size: cover;
 	position: absolute;
-	left: -50%;
+	left: -100%;
 	transition: var(--transition) !important;
-	will-change: transform;
+	will-change: transform;	
 }
 
 .slider__descr {
@@ -96,9 +97,10 @@ html {
 	z-index: 0;
 	transform: rotate(-20deg) !important;
 	top: -90vh;
-	left: -10vh;
+	left: -20vh;
 	opacity: 0.5;
 	filter: blur(120px) saturate(10);
+	will-change: transform;
 }
 
 .slider-bg .slider__item {

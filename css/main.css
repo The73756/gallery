@@ -88,7 +88,6 @@ html {
 	position: absolute;
 	left: -30%;
 	transition: var(--transition) !important;
-	will-change: transform;
 }
 
 .slider-bg {
@@ -98,7 +97,6 @@ html {
 	left: -20vh;
 	opacity: 0.5;
 	filter: blur(120px) saturate(10);
-	will-change: transform;
 }
 
 .slider-bg .slider__item {

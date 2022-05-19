@@ -1,11 +1,8 @@
 const sliderMain = new Swiper('.slider-main', {
-	observer: true,
-	observeParents: true,
 	freeMode: true,
 	centeredSlides: true,
 	mousewheel: true,
 	parallax: true,
-	sensitivity: 10,
 	breakpoints: {
 		0: {
 			slidesPerView: 1.2,
@@ -19,14 +16,11 @@ const sliderMain = new Swiper('.slider-main', {
 });
 
 const sliderBg = new Swiper('.slider-bg', {
-	observer: true,
-	observeParents: true,
 	centeredSlides: true,
 	parallax: true,
-	sensitivity: 10,
+	spaceBetween: 60,
 	slidesPerView: 3.5,
 });
-
 sliderMain.controller.control = sliderBg;
 
 document.querySelectorAll('.slider__item').forEach(item => {  

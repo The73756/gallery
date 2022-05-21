@@ -20,11 +20,7 @@ const sliderMain = new Swiper('.slider-main', {
 	}
 });
 
-document.querySelectorAll('.slider__item').forEach(item => {  
-	item.addEventListener('click', event =>{
-		new GraphModal().open('first');
-	})
-});
+const modal = new GraphModal();
 
 let descr = document.querySelector('.descr');
 sliderMain.on('slideChange', e => {

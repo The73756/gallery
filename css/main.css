@@ -196,6 +196,12 @@ html {
 	cursor: pointer;
 }
 
+@media (max-width: 680px) {
+	.popup__img {
+		width: 100%;
+	}
+}
+
 .lightbox {
   display: none;
   position: fixed;

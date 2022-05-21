@@ -9,6 +9,11 @@ const sliderMain = new Swiper('.slider-main', {
 			spaceBetween: 20
 		},
 		680: {
+			slidesPerView: 2.5,
+			spaceBetween: 30
+		},
+
+		1200: {
 			slidesPerView: 3.5,
 			spaceBetween: 30
 		}
@@ -27,4 +32,10 @@ sliderMain.on('slideChange', e => {
 });
 
 new SimpleBar(document.getElementById('simplebar'));
+
+document.querySelectorAll('.popup__img').forEach(item => {
+	item.addEventListener('click', event => {
+		item.classList.toggle('opened')
+	})
+})
 

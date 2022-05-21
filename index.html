@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="modal/graph-modal.min.css">
+	<link rel="stylesheet" href="simplebar/simplebar.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Document</title>
 </head>
@@ -36,6 +37,7 @@
 					Камера Николая Бестужева в Петровской тюрьме
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="second">
 				<picture>
 					<source srcset="images/2.avif" type="image/avif">
@@ -48,6 +50,7 @@
 					А. И. Давыдова с детьми в Петровском заводе
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="third">
 				<picture>
 					<source srcset="images/3.avif" type="image/avif">
@@ -56,10 +59,11 @@
 						alt="">
 				</picture>
 				<p class="slider__descr">
-					<span>???</span>
+					<span>1827</span>
 					Акварель бестужева
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="fourth">
 				<picture>
 					<source srcset="images/4.avif" type="image/avif">
@@ -68,10 +72,11 @@
 						alt="">
 				</picture>
 				<p class="slider__descr">
-					<span>???</span>
+					<span>1827</span>
 					Декабристы в камере Читинского острога
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="fifth">
 				<picture>
 					<source srcset="images/5.avif" type="image/avif">
@@ -84,6 +89,7 @@
 					С. Г. Волконский с женой в камере, отведённой им в Петровской тюрьме
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="sixth">
 				<picture>
 					<source srcset="images/6.avif" type="image/avif">
@@ -96,6 +102,7 @@
 					А. Е. Розен с женой в камере, отведённой им в Петровской тюрьме
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="seventh">
 				<picture>
 					<source srcset="images/7.avif" type="image/avif">
@@ -104,10 +111,11 @@
 						alt="">
 				</picture>
 				<p class="slider__descr">
-					<span>???</span>
-					Во дворе Читинского острога.
+					<span>1828-1830</span>
+					Во дворе Читинского острога
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="eighth">
 				<picture>
 					<source srcset="images/8.avif" type="image/avif">
@@ -116,10 +124,11 @@
 						alt="">
 				</picture>
 				<p class="slider__descr">
-					<span>???</span>
+					<span>1834</span>
 					Общий вид Перовского завода
 				</p>
 			</div>
+
 			<div class="swiper-slide slider__item" data-graph-path="ninth">
 				<picture>
 					<source srcset="images/9.avif" type="image/avif">
@@ -132,8 +141,8 @@
 					Камера Вольфа в Петровской тюрьме
 				</p>
 			</div>
-			<div class="swiper-slide slider__item slider__item--last">
-			</div>
+
+			<div class="swiper-slide slider__item slider__item--last"></div>
 		</div>
 	</div>
 
@@ -143,13 +152,22 @@
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/1.jpg" alt="Камера Николая Бестужева в Петровской тюрьме">
+						<a href="#img1">
+							<picture>
+								<source srcset="images/1.avif" type="image/avif">
+								<source srcset="images/1.webp" type="image/webp">
+								<img loading="lazy" src="images/1.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img1">
+							<span style="background-image: url('images/1.jpg')"></span>
+						</a>	
 						<div class="popup__name">Камера Николая Бестужева в Петровской тюрьме</div>
-						<div class="popup__post">1831 год</div>
+						<div class="popup__post">М. Л. Бестужев, 1831 год</div>
 					</div>
 				</div>
 				<div class="popup__bottom">
-					<div class="popup__bottom-content">
+					<div class="popup__bottom-content" data-simplebar>
 						<div class="popup__descr">
 							<h3 class="popup__subtitle">Описание</h3>
 							<p class="popup__text">
@@ -167,13 +185,22 @@
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/2.jpg" alt="">
+						<a href="#img2">
+							<picture>
+								<source srcset="images/2.avif" type="image/avif">
+								<source srcset="images/2.webp" type="image/webp">
+								<img loading="lazy" src="images/2.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img2">
+							<span style="background-image: url('images/2.jpg')"></span>
+						</a>	
 						<div class="popup__name">А. И. Давыдова с детьми в Петровском заводе</div>
 						<div class="popup__post">Сепия Н. А. Бестужева, 1835 год</div>
 					</div>
 				</div>
 				<div class="popup__bottom">
-					<div class="popup__bottom-content">
+					<div class="popup__bottom-content" data-simplebar>
 						<div class="popup__descr">
 							<h3 class="popup__subtitle">Описание</h3>
 							<p class="popup__text">
@@ -194,67 +221,84 @@
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/3.jpg" alt="">
+						<a href="#img3">
+							<picture>
+								<source srcset="images/3.avif" type="image/avif">
+								<source srcset="images/3.webp" type="image/webp">
+								<img loading="lazy" src="images/3.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img3">
+							<span style="background-image: url('images/3.jpg')"></span>
+						</a>	
 						<div class="popup__name">Декабристы на мельнице в Чите.</div>
-						<div class="popup__post">Акварель Н. П. Репина, 1828–1830гг</div>
+						<div class="popup__post">Акварель Н. П. Репина, 1827гг</div>
 					</div>
 				</div>
-				<div class="popup__bottom">
-					<div class="tabs" data-tabs="popup">
-						<div class="tabs__content">
-							<div class="tabs__panel">
-								<div class="popup__bottom-content">
-									<div class="popup__descr">
-										<h3 class="popup__subtitle">Описание</h3>
-										<p class="popup__text">
-											На акварели изображены: в дверях Михаил Фонвизин, читает — Евгений Оболенский, с трубкой — сам
-											Николай Репин. В середине комнаты разговаривают Николай Лорер (со спины), Павел Аврамов в глубине
-											Иван Якушкин, справа у ручной мельницы — Владимир Бечаснов, Пётр Муханов и Сергей Трубецкой
-											(со спины).
-										</p>
-									</div>
-								</div>
+					<div class="tabs__panel">
+						<div class="popup__bottom-content" data-simplebar>
+							<div class="popup__descr">
+								<h3 class="popup__subtitle">Описание</h3>
+								<p class="popup__text">
+									На акварели изображены: в дверях Михаил Фонвизин, читает — Евгений Оболенский, с трубкой — сам
+									Николай Репин. В середине комнаты разговаривают Николай Лорер (со спины), Павел Аврамов в глубине
+									Иван Якушкин, справа у ручной мельницы — Владимир Бечаснов, Пётр Муханов и Сергей Трубецкой
+									(со спины).
+								</p>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="fourth">
 			<button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/4.jpg" alt="">
+						<a href="#img4">
+							<picture>
+								<source srcset="images/4.avif" type="image/avif">
+								<source srcset="images/4.webp" type="image/webp">
+								<img loading="lazy" src="images/4.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img4">
+							<span style="background-image: url('images/4.jpg')"></span>
+						</a>	
 						<div class="popup__name">Декабристы в камере Читинского острога</div>
 						<div class="popup__post">Акварель Н. П. Репина, 1828–1830гг</div>
 					</div>
 				</div>
 				<div class="popup__bottom">
-					<div class="tabs" data-tabs="popup">
-						<div class="tabs__content">
-							<div class="tabs__panel">
-								<div class="popup__bottom-content">
-									<div class="popup__descr">
-										<h3 class="popup__subtitle">Описание</h3>
-										<p class="popup__text">
-											Декабристы в камере Читинского острога: слева Анненков полулежа читает книгу; за столом Никита
-											Муравьев и Вадковский играют в шахматы. На кровати справа сидит Барятинский
-										</p>
-									</div>
-								</div>
-							</div>
+					<div class="popup__bottom-content" data-simplebar>
+						<div class="popup__descr">
+							<h3 class="popup__subtitle">Описание</h3>
+							<p class="popup__text">
+								Декабристы в камере Читинского острога: слева Анненков полулежа читает книгу; за столом Никита
+								Муравьев и Вадковский играют в шахматы. На кровати справа сидит Барятинский
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="fifth">
 			<button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/5.jpg" alt="">
+						<a href="#img5">
+							<picture>
+								<source srcset="images/5.avif" type="image/avif">
+								<source srcset="images/5.webp" type="image/webp">
+								<img loading="lazy" src="images/5.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img5">
+							<span style="background-image: url('images/5.jpg')"></span>
+						</a>	
 						<div class="popup__name">С. Г. Волконский с женой в камере, отведённой им в Петровской тюрьме</div>
 						<div class="popup__post">Н. П. Репин, 1830</div>
 					</div>
@@ -267,66 +311,83 @@
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/6.jpg" alt="">
+						<a href="#img6">
+							<picture>
+								<source srcset="images/6.avif" type="image/avif">
+								<source srcset="images/6.webp" type="image/webp">
+								<img loading="lazy" src="images/6.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img6">
+							<span style="background-image: url('images/6.jpg')"></span>
+						</a>
 						<div class="popup__name">А. Е. Розен с женой в камере, отведённой им в Петровской тюрьме</div>
 						<div class="popup__post">Н. П. Репин, 1828–1830г</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="seventh">
 			<button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/7.jpg" alt="">
+						<a href="#img7">
+							<picture>
+								<source srcset="images/7.avif" type="image/avif">
+								<source srcset="images/7.webp" type="image/webp">
+								<img loading="lazy" src="images/7.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img7">
+							<span style="background-image: url('images/7.jpg')"></span>
+						</a>	
 						<div class="popup__name">Во дворе читинского острога</div>
 						<div class="popup__post">Н. П. Репин, 1828–1830гг</div>
 					</div>
 				</div>
 				<div class="popup__bottom">
-					<div class="tabs" data-tabs="popup">
-						<div class="tabs__content">
-							<div class="tabs__panel">
-								<div class="popup__bottom-content">
-									<div class="popup__descr">
-										<h3 class="popup__subtitle">Описание</h3>
-										<p class="popup__text">
-											Иван Дмитриевич Якушкин, Павел Сергеевич Бобрищев-Пушкин и Михаил Карлович Кюхельбекер. Во дворе
-											Читинского острога.
-										</p>
-									</div>
-								</div>
-							</div>
+					<div class="popup__bottom-content" data-simplebar>
+						<div class="popup__descr">
+							<h3 class="popup__subtitle">Описание</h3>
+							<p class="popup__text">
+								Иван Дмитриевич Якушкин, Павел Сергеевич Бобрищев-Пушкин и Михаил Карлович Кюхельбекер. Во дворе
+								Читинского острога.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="eighth">
 			<button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/8.jpg" alt="">
+						<a href="#img8">
+							<picture>
+								<source srcset="images/8.avif" type="image/avif">
+								<source srcset="images/8.webp" type="image/webp">
+								<img loading="lazy" src="images/8.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img8">
+							<span style="background-image: url('images/8.jpg')"></span>
+						</a>	
 						<div class="popup__name">Петровский завод — место заключения декабристов</div>
-						<div class="popup__post">Н. П. Репин, 1833г</div>
+						<div class="popup__post">Н. П. Репин, 1834г</div>
 					</div>
 				</div>
 				<div class="popup__bottom">
-					<div class="tabs" data-tabs="popup">
-						<div class="tabs__content">
-							<div class="tabs__panel">
-								<div class="popup__bottom-content">
-									<div class="popup__descr">
-										<h3 class="popup__subtitle">Описание</h3>
-										<p class="popup__text">
-											Авторское повторение, сделанное для Никиты Муравьёва. В центре — тюрьма, где были заключены
-											декабритсы. Рядом с собой художник изобразил Муравьёва с дочерью Ноннушкой.
-										</p>
-									</div>
-								</div>
-							</div>
+					<div class="popup__bottom-content" data-simplebar>
+						<div class="popup__descr">
+							<h3 class="popup__subtitle">Описание</h3>
+							<p class="popup__text">
+								Авторское повторение, сделанное для Никиты Муравьёва. В центре — тюрьма, где были заключены
+								декабритсы. Рядом с собой художник изобразил Муравьёва с дочерью Ноннушкой.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -338,26 +399,29 @@
 			<div class="graph-modal__content">
 				<div class="popup__top">
 					<div class="popup__info">
-						<img class="popup__img" src="images/9.jpg" alt="">
+						<a href="#img9">
+							<picture>
+								<source srcset="images/9.avif" type="image/avif">
+								<source srcset="images/9.webp" type="image/webp">
+								<img loading="lazy" src="images/9.jpg" class="popup__img" width="100%" height="auto" alt="">
+							</picture>
+						</a>
+						<a href="#" class="lightbox" id="img9">
+							<span style="background-image: url('images/9.jpg')"></span>
+						</a>	
 						<div class="popup__name">Камера Вольфа в Петровской тюрьме</div>
 						<div class="popup__post">Н. А. Бестужев, 1831–1835гг.</div>
 					</div>
 				</div>
 				<div class="popup__bottom">
-					<div class="tabs" data-tabs="popup">
-						<div class="tabs__content">
-							<div class="tabs__panel">
-								<div class="popup__bottom-content">
-									<div class="popup__descr">
-										<h3 class="popup__subtitle">Описание</h3>
-										<p class="popup__text">
-											На картине изображена камера где отбывал свое заключенние Фердинанд Богданович Вольф,
-											талантливый врач слава о котором распространилась далеко, поэтому поселении ему была разрешена
-											врачебная практика, из-за нехватки медицинских кадров в Восточной Сибири.
-										</p>
-									</div>
-								</div>
-							</div>
+					<div class="popup__bottom-content" data-simplebar>
+						<div class="popup__descr">
+							<h3 class="popup__subtitle">Описание</h3>
+							<p class="popup__text">
+								На картине изображена камера где отбывал свое заключенние Фердинанд Богданович Вольф,
+								талантливый врач слава о котором распространилась далеко, поэтому поселении ему была разрешена
+								врачебная практика, из-за нехватки медицинских кадров в Восточной Сибири.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -367,6 +431,7 @@
 
 	<script src="swiper/swiper-bundle.min.js"></script>
 	<script src="modal/graph-modal.min.js"></script>
+	<script src="simplebar/simplebar.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 

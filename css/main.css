@@ -54,6 +54,7 @@ html {
 	overflow: hidden;
 	cursor: pointer;
 	transition: transform var(--transition);
+	border-radius: 4px
 }
 
 .slider__item--last {
@@ -73,19 +74,30 @@ html {
 	backface-visibility: hidden
 }
 
+@media (max-width: 680px) {
+	.slider__img {
+		height: 80%;
+	}
+}
+
 .slider__descr {
 	margin: 0;
 	height: 15%;
-	width: inherit;
+	width: 100%;
 	position: absolute;
 	bottom: 0;
 	padding: 5px 30px 5px 30px;
 	background-color: rgba(23, 95, 71, 0.2);
 	text-align: center;
-	border-radius: 0 0 6px 6px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+@media (max-width: 680px) {
+	.slider__descr {
+		height: 20%;
+	}
 }
 
 .slider__descr span {
@@ -178,16 +190,35 @@ html {
 }
 
 .popup__img {
-	width: 100%;
+	width: 60%;
 	height: auto;
 	border-radius: 6px;
 	cursor: pointer;
 }
 
-.popup__img.opened {
-	z-index: 2;
-	width: 90%;
-	height: auto;
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 576px) {

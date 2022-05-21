@@ -20,18 +20,10 @@ const sliderMain = new Swiper('.slider-main', {
 	}
 });
 
-const modal = new GraphModal();
-
 let descr = document.querySelector('.descr');
 sliderMain.on('slideChange', e => {
 	sliderMain.activeIndex > 0 ? descr.classList.add('hidden') : descr.classList.remove('hidden')
 });
 
-new SimpleBar(document.getElementById('simplebar'));
-
-document.querySelectorAll('.popup__img').forEach(item => {
-	item.addEventListener('click', event => {
-		item.classList.toggle('opened')
-	})
-})
-
+const modal = new GraphModal();
+new SimpleBar();

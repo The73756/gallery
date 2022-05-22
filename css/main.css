@@ -227,6 +227,96 @@ html {
   background-size: contain;
 }
 
+#img1 .lightbox__image {
+	background-image: url('../images/1.jpg');
+}
+.avif #img1 .lightbox__image {
+	background-image: url('../images/1.avif');
+}
+.webp #img1 .lightbox__image {
+	background-image: url('../images/1.webp');
+}
+
+#img2 .lightbox__image {
+	background-image: url('../images/2.jpg');
+}
+.avif #img2 .lightbox__image {
+	background-image: url('../images/2.avif');
+}
+.webp #img2 .lightbox__image {
+	background-image: url('../images/2.webp');
+}
+
+#img3 .lightbox__image {
+	background-image: url('../images/3.jpg');
+}
+.avif #img3 .lightbox__image {
+	background-image: url('../images/3.avif');
+}
+.webp #img3 .lightbox__image {
+	background-image: url('../images/3.webp');
+}
+
+#img4 .lightbox__image {
+	background-image: url('../images/4.jpg');
+}
+.avif #img4 .lightbox__image {
+	background-image: url('../images/4.avif');
+}
+.webp #img4 .lightbox__image {
+	background-image: url('../images/4.webp');
+}
+
+#img5 .lightbox__image {
+	background-image: url('../images/5.jpg');
+}
+.avif #img5 .lightbox__image {
+	background-image: url('../images/5.avif');
+}
+.webp #img5 .lightbox__image {
+	background-image: url('../images/5.webp');
+}
+
+#img6 .lightbox__image {
+	background-image: url('../images/6.jpg');
+}
+.avif #img6 .lightbox__image {
+	background-image: url('../images/6.avif');
+}
+.webp #img6 .lightbox__image {
+	background-image: url('../images/6.webp');
+}
+
+#img7 .lightbox__image {
+	background-image: url('../images/7.jpg');
+}
+.avif #img7 .lightbox__image {
+	background-image: url('../images/7.avif');
+}
+.webp #img7 .lightbox__image {
+	background-image: url('../images/7.webp');
+}
+
+#img8 .lightbox__image {
+	background-image: url('../images/8.jpg');
+}
+.avif #img8 .lightbox__image {
+	background-image: url('../images/8.avif');
+}
+.webp #img8 .lightbox__image {
+	background-image: url('../images/8.webp');
+}
+
+#img9 .lightbox__image {
+	background-image: url('../images/9.jpg');
+}
+.avif #img9 .lightbox__image {
+	background-image: url('../images/9.avif');
+}
+.webp #img9 .lightbox__image {
+	background-image: url('../images/9.webp');
+}
+
 @media (max-width: 576px) {
 	.popup__image {
 		margin-right: 20px;
@@ -333,10 +423,6 @@ html {
 	.slider-bg {
 		top: -75vh;
 		left: 0;
-	}
-
-	.title {
-		font-size: calc(var(--sizeindex) * 4.5);
 	}
 
 	.descr {

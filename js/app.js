@@ -26,4 +26,3 @@ sliderMain.on('slideChange', e => {
 });
 
 const modal = new GraphModal();
-new SimpleBar();

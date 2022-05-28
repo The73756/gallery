@@ -157,6 +157,12 @@ html {
 	-webkit-text-stroke: 0.03em #5da419;
 }
 
+@media (max-width:680px) {
+	.title {
+		-webkit-text-stroke: 2.5px #5da419;
+	}
+}
+
 /* Modal */
 
 .graph-modal {

@@ -69,7 +69,7 @@ html {
 	height: 85%;
 	background-size: cover;
 	position: absolute;
-	right: -100%;
+	right: -50%;
 	transition: var(--transition) !important;
 	will-change: transform;
 	backface-visibility: hidden

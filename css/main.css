@@ -154,13 +154,7 @@ html {
 	-webkit-text-fill-color: transparent;
 	color: green;
 	/* text-shadow: #000 1px 1px 7px; */
-	-webkit-text-stroke: 0.03em #5da419;
-}
-
-@media (max-width:680px) {
-	.title {
-		-webkit-text-stroke: 2px #5da419;
-	}
+	-webkit-text-stroke: 0.04em #5da419;
 }
 
 /* Modal */

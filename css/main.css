@@ -159,7 +159,7 @@ html {
 
 @media (max-width:680px) {
 	.title {
-		-webkit-text-stroke: 2.5px #5da419;
+		-webkit-text-stroke: 2px #5da419;
 	}
 }
 

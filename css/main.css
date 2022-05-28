@@ -6,6 +6,7 @@
 
 :root {
 	--dark-color: #070707;
+	--light-color: #fff;
 	--sizeindex: calc(1vw + 1vh);
 	--transition: .75s cubic-bezier(.2, .6, 0, 1);
 }
@@ -31,7 +32,7 @@ html {
 	background-size: cover;
 	background-position: center;
 	background-repeat: repeat;
-	color: #fff;
+	color: var(--light-color);
 	font-family: raleway_m, sans-serif;
 	overflow: hidden;
 	line-height: 1.8;
@@ -74,6 +75,11 @@ html {
 	backface-visibility: hidden
 }
 
+.slider__img--pt {
+	width: 150%;
+	right: -15%;
+}
+
 @media (max-width: 680px) {
 	.slider__img {
 		height: 80%;
@@ -110,7 +116,7 @@ html {
 	z-index: 10;
 	position: absolute;
 	bottom: 20px;
-	color: #fff;
+	color: var(--light-color);
 }
 
 .descr {
@@ -124,8 +130,9 @@ html {
 
 .descr p {
 	transition: transform var(--transition);
-	color: #fff;
-	
+	color: var(--light-color);
+	text-shadow: #414141 1px 1px 7px;
+
 }
 
 .descr.hidden {
@@ -139,11 +146,15 @@ html {
 }
 
 .title {
+	position: relative;
 	font-size: calc(var(--sizeindex) * 3.6);
 	display: inline-block;
-	background: linear-gradient(45deg, rgb(180, 255, 136), rgb(1, 13, 1) 100%, rgb(23, 95, 71));
-	-webkit-background-clip: text;
+	/* background: linear-gradient(270deg, #cde8b5,#96d35f,#669d34,#38571a,#263e0f);
+	-webkit-background-clip: text; */
 	-webkit-text-fill-color: transparent;
+	color: green;
+	/* text-shadow: #000 1px 1px 7px; */
+	-webkit-text-stroke: 0.03em #5da419;
 }
 
 /* Modal */
@@ -316,6 +327,104 @@ html {
 .webp #img9 .lightbox__image {
 	background-image: url('../images/9.webp');
 }
+#img10 .lightbox__image {
+	background-image: url('../images/10.jpg');
+}
+.avif #img10 .lightbox__image {
+	background-image: url('../images/10.avif');
+}
+.webp #img10 .lightbox__image {
+	background-image: url('../images/10.webp');
+}
+
+#img11 .lightbox__image {
+	background-image: url('../images/11.jpg');
+}
+.avif #img11 .lightbox__image {
+	background-image: url('../images/11.avif');
+}
+.webp #img11 .lightbox__image {
+	background-image: url('../images/11.webp');
+}
+
+#img12 .lightbox__image {
+	background-image: url('../images/12.jpg');
+}
+.avif #img12 .lightbox__image {
+	background-image: url('../images/12.avif');
+}
+.webp #img12 .lightbox__image {
+	background-image: url('../images/12.webp');
+}
+
+#img13 .lightbox__image {
+	background-image: url('../images/13.jpg');
+}
+.avif #img13 .lightbox__image {
+	background-image: url('../images/13.avif');
+}
+.webp #img13 .lightbox__image {
+	background-image: url('../images/13.webp');
+}
+
+#img14 .lightbox__image {
+	background-image: url('../images/14.jpg');
+}
+.avif #img14 .lightbox__image {
+	background-image: url('../images/14.avif');
+}
+.webp #img14 .lightbox__image {
+	background-image: url('../images/14.webp');
+}
+
+#img15 .lightbox__image {
+	background-image: url('../images/15.jpg');
+}
+.avif #img15 .lightbox__image {
+	background-image: url('../images/15.avif');
+}
+.webp #img15 .lightbox__image {
+	background-image: url('../images/15.webp');
+}
+#img16 .lightbox__image {
+	background-image: url('../images/16.jpg');
+}
+.avif #img16 .lightbox__image {
+	background-image: url('../images/16.avif');
+}
+.webp #img16 .lightbox__image {
+	background-image: url('../images/16.webp');
+}
+
+#img17 .lightbox__image {
+	background-image: url('../images/17.jpg');
+}
+.avif #img17 .lightbox__image {
+	background-image: url('../images/17.avif');
+}
+.webp #img17 .lightbox__image {
+	background-image: url('../images/17.webp');
+}
+
+#img18 .lightbox__image {
+	background-image: url('../images/18.jpg');
+}
+.avif #img18 .lightbox__image {
+	background-image: url('../images/18.avif');
+}
+.webp #img18 .lightbox__image {
+	background-image: url('../images/18.webp');
+}
+
+#img19 .lightbox__image {
+	background-image: url('../images/19.jpg');
+}
+.avif #img19 .lightbox__image {
+	background-image: url('../images/19.avif');
+}
+.webp #img19 .lightbox__image {
+	background-image: url('../images/19.webp');
+}
 
 @media (max-width: 576px) {
 	.popup__image {
@@ -334,7 +443,6 @@ html {
 
 .popup__post {
 	margin: 0;
-	margin-bottom: 10px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 160%;

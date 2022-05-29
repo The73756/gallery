@@ -425,6 +425,33 @@ html {
 .webp #img19 .lightbox__image {
 	background-image: url('../images/19.webp');
 }
+#img20 .lightbox__image {
+	background-image: url('../images/20.jpg');
+}
+.avif #img20 .lightbox__image {
+	background-image: url('../images/20.avif');
+}
+.webp #img20.lightbox__image {
+	background-image: url('../images/20.webp');
+}
+#img21 .lightbox__image {
+	background-image: url('../images/21.jpg');
+}
+.avif #img21 .lightbox__image {
+	background-image: url('../images/21.avif');
+}
+.webp #img21 .lightbox__image {
+	background-image: url('../images/21.webp');
+}
+#img22 .lightbox__image {
+	background-image: url('../images/22.jpg');
+}
+.avif #img22 .lightbox__image {
+	background-image: url('../images/22.avif');
+}
+.webp #img22 .lightbox__image {
+	background-image: url('../images/22.webp');
+}
 
 @media (max-width: 576px) {
 	.popup__image {
